@@ -1,0 +1,47 @@
+* { box-sizing: border-box; }
+body {
+  width: 340px;
+  margin: 0;
+  padding: 14px 16px 16px;
+  font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1f2937;
+  background: #fff;
+}
+header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+h1 { font-size: 15px; margin: 0; }
+.flag { display: flex; width: 24px; height: 16px; border-radius: 2px; overflow: hidden; flex: none; }
+.flag span { flex: 1; }
+.flag span:nth-child(1) { background: #00853f; }
+.flag span:nth-child(2) { background: #fdef42; }
+.flag span:nth-child(3) { background: #e31b23; }
+
+label { display: block; margin: 10px 0 4px; font-weight: 600; }
+label.check { font-weight: 400; display: flex; align-items: center; gap: 6px; margin: 4px 0; }
+small { font-weight: 400; color: #6b7280; }
+input[type="number"], input:not([type]) {
+  width: 100%; padding: 7px 9px; border: 1px solid #d1d5db; border-radius: 6px; font: inherit;
+}
+fieldset { border: 1px solid #e5e7eb; border-radius: 6px; margin: 10px 0 0; padding: 6px 10px 8px; }
+legend { font-weight: 600; padding: 0 4px; }
+
+button {
+  width: 100%; margin-top: 10px; padding: 8px; border: 0; border-radius: 6px;
+  font: inherit; font-weight: 600; cursor: pointer;
+}
+button:disabled { opacity: .5; cursor: default; }
+.primary { background: #00853f; color: #fff; }
+.danger { background: #e31b23; color: #fff; }
+.ghost { background: #f3f4f6; color: #374151; }
+
+.status { margin-top: 14px; padding: 10px; background: #f9fafb; border-radius: 6px; }
+.muted { color: #6b7280; margin-top: 2px; word-break: break-word; }
+.actions { margin-top: 4px; }
+
+.hint { margin: 4px 0 8px; color: #6b7280; font-size: 12px; }
+.jobTitle { font-weight: 600; }
+.bar { height: 6px; background: #e5e7eb; border-radius: 3px; margin: 6px 0; overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; background: #00853f; transition: width .3s; }
+.row2 { display: flex; gap: 6px; }
+.row2 button { margin-top: 8px; padding: 7px 4px; font-size: 12px; }
+.row2 button[hidden] { display: none; }
+.confirm { border: 1px solid #fca5a5; background: #fef2f2; }

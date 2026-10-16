@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Teranga Leads</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="flag"><span></span><span></span><span></span></div>
+    <h1>Teranga Leads</h1>
+  </header>
+
+  <form id="form">
+    <label for="city">Ville</label>
+    <input id="city" list="cities" placeholder="ex. Dakar, Saint-Louis, Mbour…" required>
+    <datalist id="cities">
+      <option value="Dakar"><option value="Saint-Louis"><option value="Thiès"><option value="Mbour">
+      <option value="Saly"><option value="Ziguinchor"><option value="Touba"><option value="Kaolack">
+      <option value="Rufisque"><option value="Cap Skirring"><option value="Somone"><option value="Tambacounda">
+    </datalist>
+    <p class="hint">Restaurants et hôtels sont recherchés carré par carré sur toute la ville.</p>
+
+    <label class="check"><input type="checkbox" id="withServices"> Inclure services / équipements <small>(plus lent)</small></label>
+
+    <button type="submit" id="start" class="primary">Lancer l'extraction</button>
+  </form>
+
+  <section class="status" id="jobBox" hidden>
+    <div class="jobTitle" id="jobTitle"></div>
+    <div class="bar"><i id="bar"></i></div>
+    <div id="jobStats" class="muted"></div>
+    <div id="state" class="muted"></div>
+    <div class="row2">
+      <button type="button" id="resume" class="primary">Reprendre</button>
+      <button type="button" id="stop" class="danger">Arrêter</button>
+      <button type="button" id="restart" class="ghost">Recommencer à zéro</button>
+    </div>
+  </section>
+
+  <section class="status">
+    <div><strong id="count">0</strong> fiche(s) enregistrée(s)</div>
+    <div id="msg" class="muted"></div>
+  </section>
+
+  <div class="actions">
+    <button type="button" id="export" class="primary">Exporter Excel (.xlsx)</button>
+    <button type="button" id="clear" class="ghost">Vider toutes les données</button>
+  </div>
+
+  <script src="../lib/xlsx.full.min.js"></script>
+  <script src="../lib/grid.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

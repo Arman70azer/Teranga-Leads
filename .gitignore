@@ -1,0 +1,25 @@
+# Exports Excel générés par l'extension
+*.xlsx
+*.csv
+
+# Paquets de l'extension (zip pour le Chrome Web Store, xpi pour Firefox)
+*.zip
+*.xpi
+*.crx
+*.pem
+web-ext-artifacts/
+
+# Dépendances / outils
+node_modules/
+
+# Éditeurs et systèmes
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Divers
+*.log
+.env
